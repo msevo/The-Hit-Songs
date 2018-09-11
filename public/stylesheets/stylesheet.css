@@ -1,0 +1,340 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303B8F ;
+}
+
+li {
+    float: left;
+}
+
+h3{
+  font-family: sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+#jiveLink{
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+
+#jiveList{
+  float: right;
+  text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+input{
+  text-align: center;
+}
+.canvas-container{
+  text-align: center;
+}
+
+#canvas {
+  max-height: 150px;
+  width: 80%;
+  display: inline;
+  border-radius: 25px;
+  /*outline: "#303B8F ";*/
+}
+
+#fileUp{
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 50%;
+}
+
+.upload-container{
+  text-align: center;
+  display: inline;
+}
+
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  display: none;
+}
+
+.hit{
+  text-align: center;
+  display: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.header{
+
+  width: 100%;
+}
+
+#about-container{
+  background-color: #303B8F ;
+  display: inline-block;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+  border: #EE3479;
+}
+
+#about{
+  color: #EE3479;
+  font-size: 175%;
+  font-family: 'Bungee Shade', sans-serif;
+  text-decoration: none;
+}
+
+#page-title{
+  text-align: center;
+  background-position: 50% 90%;
+  padding-top: 2px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.align-right{
+  text-align: right;
+  height: 0.5px;
+}
+
+#align-center{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 300%;
+  color: #303B8F ;
+}
+
+p{
+  font-family: sans-serif;
+  font-size: 100%;
+  text-align: center;
+  color: #303B8F ;
+}
+
+.content-wrap{
+  max-width: 1500px;
+  height: 200px;
+  text-align: center;
+}
+
+input[type="file"]{
+  visibility: hidden;
+}
+
+#custom-file-upload{
+  text-align: center;
+  color: white;
+  background-color: #303B8F ;
+  padding: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.bouncing-effect{
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.bouncing-effect:hover, .bouncing-effect:focus, .bouncing-effect:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.loading-container{
+  visibility: hidden;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#reload-container{
+  background-color: #303B8F ;
+  text-align: center;
+  max-width: 200px;
+  border-radius: 25px;
+  display: none;
+}
+
+#reload{
+  color: white;
+  font-size: 100%;
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#submitForm{
+  padding: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: auto;
+  background-color: #303B8F ;
+  border-color: #EE3479;
+  border-radius: 25px;
+  outline: none;
+
+}
+
+
+#linkInput{
+  height: 60px;
+  font-size: 18pt;
+  border-radius: 15px;
+  border-color: #303B8F ;
+  width: 100%;
+  outline: none;
+}
+
+
+#submitButton{
+  margin-top: 15px;
+  text-align: center;
+}
+
+#hitButton{
+  color: #EE3479;
+  font-size: 120%;
+  margin-top: 15px;
+  font-family: sans-serif;
+}
+
+.youtube-functionality-wrapper{
+  visibility: visible;
+  display: inline-block;
+  width: 65%;
+}
+
+.invisible-form, .invisible-input{
+  visibility: hidden;
+}
+
+.footer{
+  visibility: visible;
+  background-color: white;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height: 12.5%;
+}
+
+#authors{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.invisible-button{
+  visibility: hidden;
+  height: 0.5px;
+}
+
+.upload-container{
+  display: inline-block;
+}
+
+#right, #left, #center{
+  display: table-cell;
+  padding: 25px;
+
+}
+
+.upload-wrapper{
+  max-width: 1500px;
+  margin: 25px auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: table;
+}
+
+.youtube{
+  width: 100%;
+  display: inline-block;
+}
+
+#thefile{
+  width: 0.1px;
+  height: 0.1px;
+}
+
+h2{
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 150%;
+  color: #303B8F ;
+}
+
+#findOut{
+  display: inline-block;
+  text-align: center;
+  padding: 12.5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 200px;
+  border-radius: 25px;
+  background-color: #303B8F ;
+  margin-top: 0px;
+  visibility: hidden;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+    from {background-color: #303B8F ;}
+    to {background-color: #EE3479;}
+}
+
+#description-wrapper{
+  display: inline-block;
+  width: 60%;
+  background-color: #303B8F ;
+
+}
+
+.body{
+  margin-bottom: 80px;
+}

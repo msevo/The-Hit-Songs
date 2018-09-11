@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Is Your Song a Hit?</title>
+  <link rel="stylesheet" href='./stylesheets/aboutStyles.css'>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+</head>
+
+<body>
+  <ul>
+    <li><a onclick="location.assign('/')">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li id="jiveList">
+      <h3 style="color: white">Powered By:<a id="jiveLink" href="./jive.html">Jive</a></h3>
+    </li>
+  </ul>
+  <div class="header">
+    <h1>About thehitsongs.com</h1>
+  </div>
+  <div class='center-it'>
+    <div id="about-us" >
+      <p style="text-align:left; text-indent: 40px;">TheHitSongs.com uses the KNN (K-Nearest Neighbors) machine learning algorithm to analyze your mp3 file and classify it as a hit song or not a hit song.
+          We uploaded songs from the top 100 lists of the past twenty years and analyzed their bpms (beats per minute), average frequencies, mode frequencies, and durations. Then we fed the data into
+          the machine learning algorithm, letting it know that these songs should be considered "hits". We proceeded to do the same with songs that were not considered "hits" during their respective years.
+          We fed these songs into the machine learning algorithm, and made sure it knew that these songs should not be considered "hits". This is the process by which we trained the algorithm.
+          <br></p>
+      <p style="text-align:left; text-indent: 40px;">We built this program with the purpose of illuminating the music-industry's rubric for what is considered to be "good" music. If the program generated the "not a hit" response for your song, it only
+          means that the data representing your song does not fit into the schemas of the most popular songs. Thank you for visiting our site, and please be sure to check out our next big project:
+      </p>
+    </div>
+    <a href="./jive.html" style="text-decoration:none; font-family: 'Bungee Shade'; font-size: 200%; display: inline-block;" class="bouncing-effect">jive.live</a>
+  </div>
+  <div class="footer">
+    <h2 style="color:white; font-size: 150%; text-align: center">Created By: <a href="https://linkedin.com/in/elias-defaria-874155133" style="text-decoration: none; color: white">Elias deFaria</a></h2>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "name": "isitahit",
+  "version": "1.0.0",
+  "description": "Machine Learning for Hit Songs",
+  "main": "server.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bpm-detective": "^2.0.3",
+    "bpm.js": "^2.0.0",
+    "child_process": "^1.0.2",
+    "consolidate": "^0.15.0",
+    "cookie-parser": "^1.4.3",
+    "download-file": "^0.1.5",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.4.0",
+    "fast-csv": "^2.4.1",
+    "ffmpeg-stream": "^0.5.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.5",
+    "machine_learning": "^0.1.1",
+    "ml-knn": "^2.1.3",
+    "morgan": "^1.9.0",
+    "mp3-duration": "^1.1.0",
+    "multer": "^1.3.0",
+    "music-tempo": "^1.0.3",
+    "musicmetadata": "^2.0.5",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0",
+    "sox": "^0.1.0",
+    "swig": "^1.4.2",
+    "web-audio-api": "^0.2.2",
+    "webpack": "^3.11.0",
+    "youtube-dl": "^1.12.2"
+  },
+  "keywords": [
+    "node"
+  ],
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack -p"
+  },
+  "author": "Elias deFaria & Marko Sevo",
+  "license": "ISC"
+}

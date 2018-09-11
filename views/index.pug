@@ -1,0 +1,70 @@
+doctype
+html(lang="en")
+
+  head
+
+    meta(charset="utf-8")
+    title=title
+    link(rel="stylesheet", type = "text/css", href="./stylesheets/stylesheet.css")
+    link(href="https://fonts.googleapis.com/css?family=Alegreya", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Bungee+Shade", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Monoton|Do+Hyeon|Iceland|Montserrat|Press+Start+2P|VT323", rel="stylesheet")
+    link(rel="stylesheet", type = "text/css", href="./stylesheets/loadingAnimation.css")
+    script(src='bundle.js')
+
+  body
+    ul
+      li
+        a(onclick="location.assign('/')") Home
+      li
+        a(href="./about.html") About
+      li(id="jiveList")
+        h3(style="color: white") Powered By:
+          a(id="jiveLink", href="./jive.html") Jive
+    div(class="header")
+      div(id="page-title")
+        h1(style="color:#303B8F;")="Is YOUR SONG a HIT?"
+        p(style="color:#303B8F; font-size: 120%;")
+          | Use A.I. to see if your song will make it in the music industry.<br>
+          | Upload an MP3 or Submit a Youtube Link to begin!
+        
+    div(class="body")
+      div(class="upload-wrapper")
+        div(class="youtube-functionality-wrapper", id="left")
+          div(class="youtube-container")
+            form(action="/post-youtube-conversion", method="post", id="youtube-form")
+              div(class="youtube")
+                input(id="linkInput", name="example", type="url", placeholder="Paste Youtube Link Here!", maxlength="150")
+              div(class="invisible-button")
+                button(type="submit", id="submitYoutubeForm", onclick="return document.querySelector('#linkInput').value!=''") Convert to MP3
+        div(id="center")
+          h2="OR"
+        div(class="upload-container", id="right")
+          form(action='/check', method="post", enctype = "multipart/form-data", id="upload-form")
+            div
+              label(for="thefile", id="custom-file-upload", class="bouncing-effect") Upload Your MP3
+              input(type="file", id="thefile", accept="audio/*", name="uploadedFile")
+              input(type="submit", class="invisible-button", id="submitSong", style="visibility: hidden" onClick="return document.getElementById('thefile').value !=''")
+      div(id="findOut", class="bouncing-effect")
+        p(style="font-family: sans-serif;font-size: 100%; color: white;") Find Out Now!
+    div(aria-busy="true", aria-label="Loading", role="progressbar", class="loading-container")
+      div(class="swing")
+        div(class="swing-l")
+        div
+        div
+        div
+        div
+        div
+        div(class="swing-r")
+      div(class="shadow")
+        div(class="shadow-l")
+        div
+        div
+        div(class="shadow3")
+        div(class="shadow3")
+        div(class="shadow3")
+        div(class="shadow-r")
+    div(class="footer")
+      h2(style="color:#303B8F; font-size: 150%; text-align: center;")="Created By: "
+        a(href="https://linkedin.com/in/elias-defaria-874155133", style="text-decoration: none; color: #303B8F;")="Elias deFaria"
+  

@@ -1,0 +1,59 @@
+doctype
+html(lang="en")
+
+  head
+
+    meta(charset="utf-8")
+    title=title
+    link(rel="stylesheet", type = "text/css", href="./stylesheets/stylesheet.css")
+    link(href="https://fonts.googleapis.com/css?family=Alegreya", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Bungee+Shade", rel="stylesheet")
+    link(rel="stylesheet", type = "text/css", href="./stylesheets/loadingAnimation.css")
+    script(src='bundle.js')
+
+  body(style="height:500px;")
+    ul
+      li
+        a(onclick="location.assign('/')") Home
+      li
+        a(href="./about.html") About
+      li(id="jiveList")
+        h3(style="color: white") Powered By:
+          a(id="jiveLink", href="./jive.html") Jive
+    div
+      p(style="font-family: sans-serif; font-size: 150%;")="The title of your song is: "+songTitle
+    div(class="invisible-input")
+      input(id="pathToMP3", value=path_to_song)
+    div(class="invisible-form")
+      form(action = "/hit", method="post", novalidate)
+        input(type="number", name="avgFreq", id="avg")
+        input(type="number", name="modeFreq", id="mode")
+        input(type="number", name="bpm", id="the_bpm")
+        input(type="number", name="duration", id="dur")
+        input(type="text", name="songPath", id="path")
+        input(type="submit", id="submitData")
+    div(aria-busy="true", aria-label="Loading", role="progressbar", class="loading-container")
+      div(class="swing")
+        div(class="swing-l")
+        div
+        div
+        div
+        div
+        div
+        div(class="swing-r")
+      div(class="shadow")
+        div(class="shadow-l")
+        div
+        div
+        div
+        div(class="shadow3")
+        div(class="shadow3")
+        div(class="shadow-r")
+      audio(id="audio", controls)
+    div(id="errorMessage", style="visibility: hidden;")
+      div(id ="align-center", style= "margin-right: 50px; margin-left: 50px;")
+        p(style="text-align: left; font-size: 150%;")="Your song did not have enough samples for reliable detection. Please try again with another song!"
+        div(id="reload-container", class = "bouncing-effect", onclick="location.assign('/');")
+          p(id="reload", style="font-family: sans-serif;") Try another song!
+        
+  

@@ -1,0 +1,30 @@
+doctype
+html(lang="en")
+
+  head
+
+    meta(charset="utf-8")
+    title=title
+    link(rel="stylesheet", type = "text/css", href="./stylesheets/stylesheet.css")
+    link(href="https://fonts.googleapis.com/css?family=Alegreya", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Bungee+Shade", rel="stylesheet")
+    link(rel="stylesheet", type = "text/css", href="./stylesheets/loadingAnimation.css")
+    script(src='./javascripts/render.js')
+
+  body
+    ul
+      li
+        a(onclick="location.assign('/')") Home
+      li
+        a(href="./about.html") About
+      li(id="jiveList")
+        h3(style="color: white") Powered By:
+          a(id="jiveLink", href="./jive.html") Jive
+    div(id="align-center") 
+      h1="It's Not A Hit! :("
+    div(id="align-center", style= "margin-right: 50px; margin-left: 50px;")
+      p(style="text-align: left; text-indent: 40px;")="Sorry, but your song was not considered a hit. No need to worry, our algorithm is a harsh grader. The songs it analyzed were some of the most popular songs ever! If you'd like to read more about why your song was not considered a hit, or how we constructed and trained the algorithm, check out the about tab in the top left. Thank you for using thehitsongs.com, and keep trying with other songs until you find one that's a hit! :) "
+    div(id="reload-container", class = "bouncing-effect")
+      p(id="reload", style="font-family: sans-serif;") Try another song!
+
+  

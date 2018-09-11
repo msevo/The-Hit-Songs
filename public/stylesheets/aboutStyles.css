@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303B8F ;
+}
+
+li {
+    float: left;
+}
+
+h3{
+  font-family: sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+#jiveLink{
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+
+#jiveList{
+  float: right;
+  text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+p{
+  color: #303B8F;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+h1{
+  color: #303B8F;
+  font-family: 'Bungee Shade', serif;
+  font-size: 250%;
+  text-align: center;
+}
+
+.center-it{
+  text-align: center;
+}
+
+#back-to-index{
+  background-color: #303B8F;
+  text-align: center;
+  margin: auto;
+  max-width: 200px;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 25px;
+  outline: none;
+  color: white;
+}
+
+.bouncing-effect{
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.bouncing-effect:hover, .bouncing-effect:focus, .bouncing-effect:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.footer{
+  visibility: visible;
+  background-color: #303B8F;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 12.5%;
+}
+
+#authors{
+  padding-top: 30px;
+  text-align: center;
+}
+#about-container{
+  background-color: #303B8F;
+  display: inline-block;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+  border: white;
+}
+
+#about{
+  color: white;
+  font-size: 175%;
+  font-family: 'Bungee Shade', serif;
+  text-decoration: none;
+}
+
+.thanks-container{
+  visibility: hidden;
+}
+
+.form-container{
+  margin: 35px auto;
+  text-align: center;
+}
+
+.emailInput{
+  width: 50%;
+  height: 60px;
+  font-size: 18pt;
+  border-radius: 15px;
+  border-color: #303B8F;
+  outline: none;
+}
+#submit-email-button{
+  padding: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: auto;
+  margin-top:20px;
+  background-color: #303B8F;
+  border-color: white;
+  border-radius: 25px;
+  outline: none;
+  color: white;
+}
+
+.header{
+  /*background-image: url('backgroundImage.jpg');*/
+  background-color: white;
+  padding: 35px;
+}
+
+#about-us{
+  margin-left: 40px;
+  margin-right: 40px;
+}

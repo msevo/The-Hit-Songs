@@ -1,0 +1,169 @@
+/********************************
+      LOADING ANIMATION
+********************************/
+
+.swing div {
+  border-radius: 50%;
+  float: left;
+  height: 1em;
+  width: 1em;
+}
+.swing div:nth-of-type(1) {
+  background: -webkit-linear-gradient(left, #EE3479 60%, #303B8F 120%);
+  background: linear-gradient(to right, #EE3479 60%, #303B8F 120%);
+}
+.swing div:nth-of-type(2) {
+  background: -webkit-linear-gradient(left, #EE3479 40%, #303B8F 120%);
+  background: linear-gradient(to right, #EE3479 40%, #303B8F 120%);
+}
+.swing div:nth-of-type(3) {
+  background: -webkit-linear-gradient(left, #EE3479 20%, #303B8F 90%);
+  background: linear-gradient(to right, #EE3479 20%, #303B8F 90%);
+}
+.swing div:nth-of-type(4) {
+  background: -webkit-linear-gradient(left, #EE3479 0%, #303B8F 100%);
+  background: linear-gradient(to right, #EE3479 0%, #303B8F 100%);
+}
+.swing div:nth-of-type(5) {
+  background: -webkit-linear-gradient(left, #303B8F 0%, #EE3479 120%);
+  background: linear-gradient(to right, #303B8F 0%, #EE3479 120%);
+}
+.swing div:nth-of-type(6) {
+  background: -webkit-linear-gradient(left, #303B8F 0%, #EE3479 100%);
+  background: linear-gradient(to right, #303B8F 0%, #EE3479 100%);
+}
+.swing div:nth-of-type(7) {
+  background: -webkit-linear-gradient(left, #EE3479 0%, #303B8F 100%);
+  background: linear-gradient(to right, #303B8F 0%, #303B8F 100%);
+}
+.shadow {
+  clear: left;
+  padding-top: 1.5em;
+}
+.shadow div {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  float: left;
+  width: 1em;
+  height: .25em;
+  border-radius: 50%;
+  background: #EE3479;
+}
+.shadow .shadow-l {
+  background: #EE3479;
+}
+.shadow .shadow-r {
+  background: #303B8F;
+}
+.shadow .shadow3{
+  background: linear-gradient(#EE3479, #303B8F)
+}
+
+@-webkit-keyframes ball-l {
+  0%, 50% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: rotate(50deg) translateX(-2.5em);
+    transform: rotate(50deg) translateX(-2.5em);
+  }
+}
+@keyframes ball-l {
+  0%, 50% {
+    -webkit-transform: rotate(0) translate(0);
+    transform: rotate(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: rotate(50deg) translateX(-2.5em);
+    transform: rotate(50deg) translateX(-2.5em);
+  }
+}
+@-webkit-keyframes ball-r {
+  0% {
+    -webkit-transform: rotate(-50deg) translateX(2.5em);
+    transform: rotate(-50deg) translateX(2.5em);
+  }
+  50%,
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+  }
+}
+@keyframes ball-r {
+  0% {
+    -webkit-transform: rotate(-50deg) translateX(2.5em);
+    transform: rotate(-50deg) translateX(2.5em);
+  }
+  50%,
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0)
+  }
+}
+@-webkit-keyframes shadow-l-n {
+  0%, 50% {
+    opacity: .5;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    opacity: .125;
+    -webkit-transform: translateX(-1.57em);
+    transform: translateX(-1.75em);
+  }
+}
+@keyframes shadow-l-n {
+  0%, 50% {
+    opacity: .5;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    opacity: .125;
+    -webkit-transform: translateX(-1.75);
+    transform: translateX(-1.75em);
+  }
+}
+@-webkit-keyframes shadow-r-n {
+  0% {
+    opacity: .125;
+    -webkit-transform: translateX(1.75em);
+    transform: translateX(1.75em);
+  }
+  50%,
+  100% {
+    opacity: .5;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes shadow-r-n {
+  0% {
+    opacity: .125;
+    -webkit-transform: translateX(1.75em);
+    transform: translateX(1.75em);
+  }
+  50%,
+  100% {
+    opacity: .5;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.swing-l {
+  -webkit-animation: ball-l .425s ease-in-out infinite alternate;
+  animation: ball-l .425s ease-in-out infinite alternate;
+}
+.swing-r {
+  -webkit-animation: ball-r .425s ease-in-out infinite alternate;
+  animation: ball-r .425s ease-in-out infinite alternate;
+}
+.shadow-l {
+  -webkit-animation: shadow-l-n .425s ease-in-out infinite alternate;
+  animation: shadow-l-n .425s ease-in-out infinite alternate;
+}
+.shadow-r {
+  -webkit-animation: shadow-r-n .425s ease-in-out infinite alternate;
+  animation: shadow-r-n .425s ease-in-out infinite alternate;
+}
