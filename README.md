@@ -1,4 +1,4 @@
-# THE_HIT_SONGS
+# THE HIT SONGS
 This program will prompt the user for a mp3 upload or youtube link, then run it through a version of the KNN (K-nearest neighbors) machine learning algorithm that will predict it to be a "hit" or "not a hit".
 
 **Tech Stack**
@@ -30,17 +30,17 @@ To Run Locally:
 
 **ONLY WORKS IN CHROME FOR NOW** 
 
-I am a musician. I've played piano as a hobby since I was child, and recently I've decided to attempt to produce professional-grade music.
+I am a musician. I've played guitar as a hobby since I was child, and recently I've decided to attempt to produce professional-grade music.
 I've made several songs over the past couple of months, but I wanted to accurately gauge if they were good pieces of music before releasing them.
 Thus came the idea for a machine learning algorithm that can determine hit songs!
+Obviously, this project is just a fun idea to gain some more programming chops.
 
-I plan to release the program in the future online as a web application accessible through the domain "thehitsongs.com". I've purchased the domain and will hopefully get around to uploading it in the coming months. I'd like to improve it in these ways before I do so:
+There's always room for improvement; here are some ways I'd like to improve this app when I find the time:
 
 1. Decrease latency of converting youtube links into mp3 files. The current method downloads the entire mp4, and converts
 that mp4 to an mp3 using ffmpeg. However, I have a feeling there is a way to only download the audio from the file online,
  thus decreasing the size of the file needed to be downloaded and, in turn, improving the latency. 
 2. Start audio analysis while user's file is being uploaded. This would decrease the amount of time taken to upload and analyze the song. 
-I believe this could potentially be done by reading the user's uploaded file as an audio stream, thus taking the first 20 seconds as a packet
- and analyzing everything besides the duration with the small 20 second packet. 
+I believe this could potentially be done by reading the user's uploaded file as an audio stream, instead of waiting for the whole file to upload first.
 3. Re-approach the user interface to facilitate a more user-friendly experience. 
 
